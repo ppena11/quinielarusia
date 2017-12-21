@@ -7,4 +7,11 @@ export default EStyleSheet.create({
     justifyContent: 'center',
     backgroundColor: '$primaryBlue',
   },
+  text: {
+    fontWeight: '600',
+    fontSize: 18,
+    letterSpacing: -0.5,
+    marginTop: 15,
+    color: '$white',
+  },
 });
