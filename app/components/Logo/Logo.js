@@ -5,8 +5,12 @@ import styles from './styles';
 
 const Logo = () => (
   <View style={styles.container}>
-    <Text>La quiniela mas juagada en el mundo</Text>
-    <Image style={styles.containerImage} source={require('./images/copa1.png')} />
+    <Text style={styles.text}>La quiniela mas jugada en el mundo</Text>
+    <Image
+      resizeMode="contain"
+      style={styles.containerImage}
+      source={require('./images/copa1.png')}
+    />
   </View>
 );
 
