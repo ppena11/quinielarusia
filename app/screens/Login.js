@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { View, StatusBar } from 'react-native';
 import * as firebase from 'firebase';
-
 import { Container } from '../components/Container';
-import { Logo } from '../components/Logo';
+
+import { Input } from '../components/Input';
 
 class Login extends Component {
   componentWillMount() {
@@ -17,7 +17,11 @@ class Login extends Component {
     console.log('pres');
   };
   render() {
-    return <Container />;
+    return (
+      <Container>
+        <Input />
+      </Container>
+    );
   }
 }
 

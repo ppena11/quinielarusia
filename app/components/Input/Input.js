@@ -4,9 +4,17 @@ import PropTypes from 'prop-types';
 
 import styles from './styles';
 
-const Input = ({ children }) => (
+const Input = ({
+  label, value, onChangeText, placeholder, secureTextEntry,
+}) => (
   <View style={styles.container}>
-    <Text style={styles.text}>La quiniela mas jugada en el mundo</Text>
+    <Text style={styles.text}>Label</Text>
+    <TextInput
+      autoCorrect={false}
+      onChangeText={onChangeText}
+      placeholder={placeholder}
+      secureTextEntry={secureTextEntry}
+    />
   </View>
 );
 
